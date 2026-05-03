@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Nagesh Motirave | Fullstack Java Developer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); }
+  </style>
+</head>
+<body class="bg-[#0f172a] text-slate-200 selection:bg-purple-500/30">
+
+  <!-- Navigation -->
+  <header class="fixed top-0 w-full z-50 glass border-b border-white/10">
+    <nav class="flex justify-between items-center p-5 max-w-6xl mx-auto">
+      <div class="font-bold text-2xl tracking-tighter bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+        NM.
+      </div>
+      <ul class="hidden md:flex space-x-8 text-sm font-medium">
+        <li><a href="#" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-400 transition">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-400 transition">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+      </ul>
+      <button class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2 rounded-full text-sm font-semibold transition shadow-lg shadow-blue-900/20">
+        Hire Me
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="relative min-h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+    <!-- Decorative background glow -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[120px] -z-10"></div>
+    
+    <span class="text-blue-400 font-mono mb-4 block tracking-widest uppercase text-sm">Available for work</span>
+    <h1 class="text-5xl md:text-8xl font-extrabold mb-6 tracking-tight">
+      Nagesh <span class="text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-500">Motirave</span>
+    </h1>
+    <h2 class="text-xl md:text-2xl text-slate-400 max-w-2xl mb-10 leading-relaxed">
+      Fullstack Java Developer specializing in <span class="text-white">robust backends</span> and <span class="text-white">fluid user interfaces</span>.
+    </h2>
+    
+    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-16">
+      <a href="#projects" class="bg-white text-black hover:bg-slate-200 px-8 py-3 rounded-xl font-bold transition flex items-center justify-center">
+        View My Work
+      </a>
+      <button class="border border-white/20 hover:bg-white/5 px-8 py-3 rounded-xl font-bold transition">
+        Download CV
+      </button>
+    </div>
+
+    <div class="flex space-x-8 opacity-50 hover:opacity-100 transition-opacity">
+      <a href="https://www.linkedin.com/in/nagesh-motirave-96a1a8251/" class="hover:text-blue-400">LinkedIn</a>
+      <a href="https://github.com/Nagesh-Motirave" class="hover:text-white">GitHub</a>
+      <a href="#" class="hover:text-red-400">Twitter</a>
+    </div>
+  </main>
+
+  <!-- About Section -->
+  <section id="about" class="py-32 px-8">
+    <div class="max-w-4xl mx-auto">
+      <div class="grid md:grid-cols-[1fr_2fr] gap-12 items-center">
+        <div class="aspect-square bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl rotate-3 hover:rotate-0 transition duration-500"></div>
+        <div>
+          <h2 class="text-3xl font-bold mb-6">Behind the Code</h2>
+          <p class="text-slate-400 leading-loose text-lg">
+            I bridge the gap between complex backend logic and intuitive frontend design. With a deep foundation in **Java (Spring Boot)** and a love for **React ecosystem**, I build applications that are not just functional, but performant and scalable.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-32 px-8 bg-white/[0.02]">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-16 text-center">Tech Stack</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Frontend -->
+        <div class="p-8 rounded-2xl border border-white/10 glass hover:border-blue-500/50 transition">
+          <h3 class="text-blue-400 font-bold mb-4 uppercase text-sm tracking-widest">Frontend</h3>
+          <ul class="space-y-2 text-slate-300">
+            <li>React / Next.js</li>
+            <li>TypeScript</li>
+            <li>Tailwind CSS</li>
+            <li>Redux Toolkit</li>
+          </ul>
+        </div>
+        <!-- Backend -->
+        <div class="p-8 rounded-2xl border border-white/10 glass hover:border-purple-500/50 transition">
+          <h3 class="text-purple-400 font-bold mb-4 uppercase text-sm tracking-widest">Backend</h3>
+          <ul class="space-y-2 text-slate-300">
+            <li>Java / Spring Boot</li>
+            <li>Microservices</li>
+            <li>RESTful API Design</li>
+            <li>Hibernate / JPA</li>
+          </ul>
+        </div>
+        <!-- Database/Tools -->
+        <div class="p-8 rounded-2xl border border-white/10 glass hover:border-emerald-500/50 transition">
+          <h3 class="text-emerald-400 font-bold mb-4 uppercase text-sm tracking-widest">DevOps & DB</h3>
+          <ul class="space-y-2 text-slate-300">
+            <li>PostgreSQL / MySQL</li>
+            <li>Docker / Kubernetes</li>
+            <li>AWS Cloud</li>
+            <li>Git / CI/CD</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-32 px-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex justify-between items-end mb-16">
+        <div>
+          <h2 class="text-4xl font-bold mb-4">Selected Work</h2>
+          <p class="text-slate-400">A collection of things I've built recently.</p>
+        </div>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Project Card -->
+        <div class="group cursor-pointer">
+          <div class="relative overflow-hidden rounded-2xl bg-slate-800 aspect-video mb-6">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+               <div class="transform translate-y-4 group-hover:translate-y-0 transition">
+                 <span class="text-xs font-bold uppercase tracking-wider text-blue-400">Java • Spring Boot • React</span>
+               </div>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold mb-2 group-hover:text-blue-400 transition">Enterprise ERP System</h3>
+          <p class="text-slate-400">Full-scale resource planning software with real-time analytics.</p>
+        </div>
+
+        <div class="group cursor-pointer">
+          <div class="relative overflow-hidden rounded-2xl bg-slate-800 aspect-video mb-6">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+               <div class="transform translate-y-4 group-hover:translate-y-0 transition">
+                 <span class="text-xs font-bold uppercase tracking-wider text-purple-400">Next.js • Stripe • PostgreSQL</span>
+               </div>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold mb-2 group-hover:text-purple-400 transition">Modern E-Commerce</h3>
+          <p class="text-slate-400">High-performance storefront with headless CMS integration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-32 px-8">
+    <div class="max-w-2xl mx-auto glass p-10 rounded-3xl border border-white/10 shadow-2xl">
+      <h2 class="text-3xl font-bold mb-4 text-center">Let's Connect</h2>
+      <p class="mb-10 text-slate-400 text-center">Have a project in mind or just want to chat? My inbox is always open.</p>
+      <form class="space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <input type="text" placeholder="Name" class="w-full p-4 rounded-xl bg-white/5 border border-white/10 focus:border-blue-500 focus:bg-white/10 outline-none transition">
+          <input type="email" placeholder="Email" class="w-full p-4 rounded-xl bg-white/5 border border-white/10 focus:border-blue-500 focus:bg-white/10 outline-none transition">
+        </div>
+        <textarea placeholder="Your Message" rows="5" class="w-full p-4 rounded-xl bg-white/5 border border-white/10 focus:border-blue-500 focus:bg-white/10 outline-none transition"></textarea>
+        <button class="w-full bg-blue-600 hover:bg-blue-500 py-4 rounded-xl font-bold transition shadow-lg shadow-blue-600/20">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="py-12 border-t border-white/5 text-center text-slate-500 text-sm">
+    <p>&copy; 2026 Nagesh Motirave. Built with Coffee and Tailwind CSS.</p>
+  </footer>
+
+</body>
+</html>
